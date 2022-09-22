@@ -1,0 +1,15 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">Registro de Productos</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Nombre: </label>
+            <input type = "text" class = "form-control" id = "prd_name" [(ngModel)] = "producto.prd_name" name = "nombre">
+        </div>
+        <div class="form-group">
+            <label>Precio: </label>
+            <input type="number" class="form-control" id="prd_price" [(ngModel)] = "producto.prd_price" name="precio">
+        </div>
+        
+        <button class="btn btn-success">Guardar</button>
+    </form>
+</div>
